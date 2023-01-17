@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alexandr Novickiy](https://up.htmlacademy.ru/htmlcss/36/user/1789991).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Марченко] (https://htmlacademy.ru/profile/id505487).
 
 ---
 
