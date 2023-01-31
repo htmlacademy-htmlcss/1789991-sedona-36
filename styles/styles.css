@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+/* page-header */
+.page-header {
+    background-color: #FFFFFF;
+}
+
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.user-menu-button {
+    background-color: #756157;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-index {
+    background-color: #FFFFFF;
+}
+
+.welcome {
+    background-color: #787d80;
+    background-image: url(../Images/index-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/* advantages */
+.advantages {
+    text-align: center;
+}
+
+h2.advantages-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.advantages-text {
+    color: #333333;
+}
+
+h3.advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantages-description-gray {
+    color: #333333;
+}
+
+.advantages-item-blue {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.advantages-item:nth-child(2),
+.advantages-item:nth-child(4) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* service */
+.service {
+    text-align: center;
+}
+
+h2.service-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.service-text {
+    color: #333333;
+}
+
+h3.service-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.service-description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.service-item:nth-child(1),
+.service-item:nth-child(3) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* hotel-search */
+.hotel-search {
+    text-align: center;
+}
+
+.hotel-search-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.hotel-search-description {
+    color: #333333;
+}
+
+.button-search-hotel {
+    background-color: #756157;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* newsletter-index */
+.newsletter-index {
+    background-color: #787d80;
+    background-image: url(../Images/background-subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.newsletter-button {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+/* footer */
+.footer-contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Catalog */
+
+.main-inner {
+    background-color: #FFFFFF;
+}
+
+/* header-inner */
+.header-inner {
+    background-image: url(../Images/background-catalog.jpeg);
+    background-color: #787d80;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #FFFFFF;
+}
