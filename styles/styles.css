@@ -22,6 +22,17 @@ body {
     color: #000000;
 }
 
+.button {
+    color: #FFFFFF;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 /* page-header */
 .page-header {
     background-color: #FFFFFF;
@@ -37,13 +48,8 @@ body {
 
 .user-menu-button {
     background-color: #756157;
-    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 .main-index {
@@ -62,7 +68,7 @@ body {
     text-align: center;
 }
 
-h2.advantages-title {
+.advantages-heading {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -73,7 +79,7 @@ h2.advantages-title {
     color: #333333;
 }
 
-h3.advantages-title {
+.advantages-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -109,7 +115,7 @@ h3.advantages-title {
     text-align: center;
 }
 
-h2.service-title {
+.service-heading {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -120,7 +126,7 @@ h2.service-title {
     color: #333333;
 }
 
-h3.service-title {
+.service-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -156,12 +162,8 @@ h3.service-title {
 
 .button-search-hotel {
     background-color: #756157;
-    font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 /* newsletter-index */
@@ -183,16 +185,13 @@ h3.service-title {
 
 .newsletter-button {
     background-color: #82B3D3;
-    color: #FFFFFF;
-    font-family: inherit;
-    font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    text-transform: uppercase;
 }
 
 /* footer */
 .footer-contacts-phone {
+    font-family: normal;
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
@@ -214,4 +213,123 @@ h3.service-title {
     background-repeat: no-repeat;
     background-size: 100% auto;
     color: #FFFFFF;
+    font-size: 18px;
+}
+
+.header-inner-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.control {
+    line-height: 23px;
+}
+
+.button-apply {
+    background-color: #82B3D3;
+}
+
+.button-reset {
+    background-color: transparent;
+}
+
+/* search-result */
+.search-result-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.hotel-card {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.hotel-card-link {
+    color: inherit;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.hotel-card p {
+    color: #333333;
+}
+
+.hotel-card-price {
+    text-align: right;
+}
+
+.button-detail {
+    background-color: #756157;
+}
+
+.button-select {
+    background-color: #82B3D3;
+}
+
+.hotel-card .button-select-current {
+    background-color: #7DB54F;
+}
+
+.hotel-card-stars {
+    background-image: url(../Images/icons/star-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.hotel-card-rating {
+    background-color: #F2F2F2;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* pagination */
+.pagination-link {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pagination-item .pagination-current {
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.pagination-item .pagination-show-more {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* newsletter-catalog */
+.newsletter-catalog {
+    color: #000000;
+}
+
+.newsletter-catalog p {
+    color: #333333;
 }
