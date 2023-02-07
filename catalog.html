@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+  <div class="page-container">
   <header class="page-header">
       <nav class="page-navigation">
         <a class="navigation-logo" href="index.html">
@@ -23,7 +24,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="user-menu">
+      <ul class="user-menu-list">
         <li class="user-menu-item">
          <a class="user-menu-link" href="#">
           <span class="visually-hidden">Поиск</span>
@@ -39,8 +40,9 @@
         </li>
        </ul>
   </header>
-  <main class="main-inner">
+  <main class="main-inner main-container">
     <header class="header-inner">
+        <div class="header-wrapper">
         <h1 class="header-inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -53,7 +55,7 @@
             </li>
         </ul>
         <section class="catalog-filter-hotel">
-            <h2 class="visually-hidden">Выбор отеля по категориям</h2>
+            <h2 class="visually-hidden" hidden>Выбор отеля по категориям</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -107,10 +109,13 @@
                     <input class="catalog-filter-price" type="text" placeholder="" value="9000">
                     <input class="catalog-filter-price-range" type="range" min="0" max="9000">
                 </fieldset>
+                <div class="catalog-filter-group">
+                  <button class="button button-apply" type="submit">Применить</button>
+                  <button class="button button-reset" type="reset">Сбросить</button>
+                </div>
             </form>
-            <button class="button button-apply" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
         </section>
+        </div>
       </header>
         <section class="search-result">
           <h2 class="search-result-title">Найдено гостиниц:38</h2>
