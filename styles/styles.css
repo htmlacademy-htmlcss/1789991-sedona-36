@@ -95,6 +95,7 @@ body {
 
 .user-menu-list {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -111,7 +112,6 @@ body {
 }
 
 .user-menu-button {
-    display: block;
     margin: auto;
     padding: 8px 34px;
     background-color: #756157;
@@ -166,6 +166,7 @@ body {
 
 .advantages-list .advantages-item-blue {
     display: flex;
+    align-items: center;
     width: 100%;
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -180,11 +181,7 @@ body {
     margin-bottom: 0;
 }
 
-.advantages-heading,
-.service-heading,
-.hotel-search-title,
-.newsletter-title,
-.search-result-title {
+.headline {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -350,7 +347,7 @@ body {
     color: #FFFFFF;
     font-size: 18px;
     padding: 35px 70px 70px;
-}
+ }
 
 .header-inner-title {
     margin: 0;
@@ -475,25 +472,26 @@ body {
 /* pagination */
 .pagination-list {
     display: flex;
+    align-items: center;
     margin: 0 70px 60px;
     padding: 0;
     list-style-type: none;
 }
 
 .pagination-item {
-    width: 60px;
-    height: 60px;
     margin-right: 8px;
     background-color: #82B3D3;
     text-align: center;
 }
 
 .pagination-link {
+    display: block;
+    width: 60px;
+    height: 60px;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    text-transform: uppercase;
     text-decoration: none;
 }
 
