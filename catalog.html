@@ -67,20 +67,23 @@
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="infrastructure" value="swimming pool" checked>
-                          Бассейн
+                          <input class="control-input visually-hidden" type="checkbox" name="infrastructure" value="swimming pool" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассейн</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="infrastructure" value="parking space" checked>
-                          Парковка
+                          <input class="control-input visually-hidden" type="checkbox" name="infrastructure" value="parking space" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Парковка</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi">
-                          Wi-Fi
+                          <input class="control-input visually-hidden" type="checkbox" name="infrastructure" value="Wi-Fi">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Wi-Fi</span>
                         </label>
                       </li>
                     </ul>
@@ -90,29 +93,45 @@
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="type of housing" value="Hotel" checked>
-                          Гостиница
+                          <input class="control-input visually-hidden" type="radio" name="type of housing" value="Hotel" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Гостиница</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="type of housing" value="Motel" >
-                          Мотель
+                          <input class="control-input visually-hidden" type="radio" name="type of housing" value="Motel" >
+                          <span class="control-mark"></span>
+                          <span class="control-label">Мотель</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="type of housing" value="Apartments">
-                          Апартаменты
+                          <input class="control-input visually-hidden" type="radio" name="type of housing" value="Apartments">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Апартаменты</span>
                         </label>
                       </li>
                     </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <input class="catalog-filter-price" type="text" placeholder="" value="0">
-                    <input class="catalog-filter-price" type="text" placeholder="" value="9000">
-                    <input class="catalog-filter-price-range" type="range" min="0" max="9000">
+                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                    <div class="wrapper-inputs">
+                      <label class="visually-hidden" for="price-min">цена от</label>
+                      <input class="catalog-filter-price field filter-price-min" id="price-min" name="price-min" type="text" placeholder="от" value="0">
+                      <label class="visually-hidden" for="price-max">цена до</label>
+                      <input class="catalog-filter-price field filter-price-max" id="price-max" name="price-max" type="text" placeholder="до" value="9000">
+                    </div>
+                    <div class="range">
+                      <div class="range-bar">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
                 </fieldset>
                 <div class="catalog-filter-group">
                   <button class="button button-apply button-filter blue-button" type="submit">Применить</button>
@@ -224,7 +243,8 @@
           <h2 class="newsletter-title headline">Подпишитесь на рассылку</h2>
           <p class="newsletter-desription text-gray">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" >
-            <input class="newsletter-email" name="email-user" placeholder="Ваш e-mail" type="email">
+            <label class="visually-hidden" for="email-user">Email</label>
+            <input class="newsletter-email field" name="email-user" id="email-user" placeholder="Ваш e-mail" type="email">
             <button class="newsletter-button button blue-button" type="submit">Подписаться</button>
           </form>
         </section>
