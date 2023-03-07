@@ -229,7 +229,6 @@ body {
     width: 100%;
     height: 57px;
     margin-top: 25px;
-    /* padding-bottom: 82px; */
 }
 
 /* advantages */
@@ -262,7 +261,7 @@ body {
 }
 
 .advantages-item:not(.advantages-item-blue) {
-    padding: 113px 85px;
+    padding: 113px 84px;
 }
 
 .advantages-wrapper {
