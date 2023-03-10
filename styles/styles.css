@@ -131,6 +131,11 @@ body {
     text-decoration: none;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+    color: #615048;
+}
+
 .navigation-link:focus,
 .user-menu-link:focus {
     outline-offset: -1px;
@@ -189,6 +194,11 @@ body {
 .user-menu-icon {
     margin: auto;
     fill: #000000;
+}
+
+.user-menu-link:hover .user-menu-icon,
+.user-menu-link:focus .user-menu-icon {
+    fill: #615048;
 }
 
 .user-menu-button {
