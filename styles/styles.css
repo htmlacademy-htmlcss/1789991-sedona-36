@@ -527,8 +527,8 @@ body {
     display: block;
     height: 34px;
     width: 115px;
-    mask: url(../images/footer/html-academy.svg#maskelement);
     -webkit-mask: url(../images/footer/html-academy.svg);
+    mask: url(../images/footer/html-academy.svg);
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
     background-color: #000000;
