@@ -1179,6 +1179,11 @@ body {
     border: 2px solid #F2F2F2;
 }
 
+@-moz-document url-prefix() {
+    .number-people-field {
+        font-size: 16px;
+    }
+}
 .number-people-field::-webkit-outer-spin-button,
 .number-people-field::-webkit-inner-spin-button {
     display: none;
