@@ -131,6 +131,11 @@ body {
     text-decoration: none;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+    color: #615048;
+}
+
 .navigation-link:focus,
 .user-menu-link:focus {
     outline-offset: -1px;
@@ -189,6 +194,11 @@ body {
 .user-menu-icon {
     margin: auto;
     fill: #000000;
+}
+
+.user-menu-link:hover .user-menu-icon,
+.user-menu-link:focus .user-menu-icon {
+    fill: #615048;
 }
 
 .user-menu-button {
@@ -527,8 +537,8 @@ body {
     display: block;
     height: 34px;
     width: 115px;
-    mask: url(../images/footer/html-academy.svg#maskelement);
     -webkit-mask: url(../images/footer/html-academy.svg);
+    mask: url(../images/footer/html-academy.svg);
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
     background-color: #000000;
@@ -802,8 +812,7 @@ body {
 }
 
 .catalog-filter-group:last-child {
-    align-self: flex-end;
-    margin-bottom: -8px;
+    margin-top: 56px;
 }
 
 .button-apply {
@@ -931,7 +940,7 @@ body {
 }
 
 .hotel-card-title {
-    margin: 16px 0 0;
+    margin: 15px 0 0;
     font-size: 24px;
     line-height: 28px;
 }
@@ -1170,6 +1179,11 @@ body {
     border: 2px solid #F2F2F2;
 }
 
+@-moz-document url-prefix() {
+    .number-people-field {
+        font-size: 16px;
+    }
+}
 .number-people-field::-webkit-outer-spin-button,
 .number-people-field::-webkit-inner-spin-button {
     display: none;
