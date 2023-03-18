@@ -87,13 +87,17 @@ body {
   margin: 0;
 }
 
-.field:hover {
+.field:hover:not(:disabled) {
   background-color: #e6e6e6;
 }
 
 .field:focus {
   outline: 3px solid #83b3d3;
   background-color: #e6e6e6;
+}
+
+.field:disabled {
+  opacity: 0.5;
 }
 
 .page-container {
@@ -126,6 +130,7 @@ body {
   width: 138px;
   margin-right: 30px;
   margin-bottom: -11px;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -240,6 +245,7 @@ body {
   background-size: 100% auto;
   padding-top: 51px;
 }
+
 .logo {
   display: block;
   margin: 0 auto;
@@ -681,23 +687,28 @@ body {
 }
 
 .control {
-  display: block;
+  display: inline-block;
   position: relative;
   padding-left: 36px;
   line-height: 23px;
+}
+
+.control:hover [class^="control"] {
+  opacity: 0.6;
   cursor: pointer;
 }
 
-.control:hover {
-  opacity: 0.6;
+.control:active [class^="control"] {
+  opacity: 0.3;
+}
+
+.control-input:disabled ~ [class] {
+  opacity: 0.4;
+  cursor: default;
 }
 
 .control-input:focus + .control-mark {
   outline: 3px solid #83b3d3;
-}
-
-.control:active {
-  opacity: 0.3;
 }
 
 .control-mark {
@@ -807,6 +818,10 @@ body {
   top: -8px;
 }
 
+.range-toggle:disabled {
+  opacity: 0.6;
+}
+
 .toggle-max {
   right: 0;
 }
@@ -870,6 +885,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: inherit;
   background-image: url(../images/icons/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: center right 21px;
@@ -1131,7 +1147,7 @@ body {
   fill: #000000;
 }
 
-.modal-close-button:hover {
+.modal-close-button:hover:not(:disabled) {
   background-color: #e6e6e6;
 }
 
@@ -1139,8 +1155,13 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.modal-close-button:active .icon-cross {
+.modal-close-button:active:not(:disabled) .icon-cross {
   fill-opacity: 0.3;
+}
+
+.modal-close-button:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 
 .modal-title {
@@ -1250,6 +1271,11 @@ body {
   outline: none;
 }
 
+.change-number-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .icon-change {
   margin: auto;
   fill: rgba(117, 97, 87, 0.3);
@@ -1261,7 +1287,7 @@ body {
   padding: 9px 3px;
 }
 
-.change-number-button:hover .icon-change {
+.change-number-button:hover:not(:disabled) .icon-change {
   fill: #000000;
 }
 
